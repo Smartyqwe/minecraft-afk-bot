@@ -9,7 +9,7 @@
  */
 
 // --- 1. IMPORTS ---
-
+const http = require('http'); http.createServer((_, res) => res.end('ok')).listen(process.env.PORT || 3000);
 const mineflayer = require('mineflayer');
 const config = require('./config.json'); // Load bot configuration
 const { pathfinder, Movements, goals } = require('mineflayer-pathfinder');
